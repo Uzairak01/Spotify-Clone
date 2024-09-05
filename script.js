@@ -166,7 +166,7 @@ async function main() {
     previous.addEventListener("click", () => {
         console.log("previous clicked");
 
-        let index = songs.indexOf(currentSong.src.split("/").slice(-1) [0]);
+        let index = songs.indexOf(currentSong.src.split("/").slice(-2) [0]);
         if((index-1) >= 0){
             playMusic(songs[index-1]);
         }
